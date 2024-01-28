@@ -1,0 +1,19 @@
+-------------------------------------------------
+CONVENCIONES QUE USAREMOS A LO LARGO DEL PROYECTO
+-------------------------------------------------
+CÓDIGO
+------
+1. Nombre de variables: Todas las palabras inician en minúsculas, y están separadas por underscore(_).
+Ej.: asi_nombramos_nuestras_variables 
+
+2. Nombre de funciones: Todas las palabras -excepto la 1ra- inician en mayúsculas, y no están separadas. 
+Ej.: asiNombramosNuestrasFunciones              
+
+3. Nombre de clases: Todas las palabras inician en mayúsculas, y no están separadas.
+Ej.: AsiNombramosNuestrasClases                    
+
+
+NOMBRE DE ARCHIVOS
+------------------
+Todas las palabras inician en mayúsculas, y no están separadas.
+Ej.:  EsteEsUnArchivoDeTexto.txt
