@@ -1,3 +1,19 @@
+# <p align="center">PROYECTO FINAL REQUERIDO POR HENRY EN EL DESARROLLO DEL BOOTCAMP DE DATA SCIENCE</p>
+### <p align="center">GRUPO Nº4</p>
+### <p align="center">DS_FT-18</p>
+---
+
+
+## Contexto
+Uno de los datos más valiosos con que cuentan las empresas de hoy en día son las reseñas de usuarios de sus productos o servicios, y esto se debe a diversas razones fundamentales. En primer lugar, estas opiniones espontáneas y sinceras surgen naturalmente cuando la experiencia con el bien o servicio fue excepcionalmente positiva o, por el contrario, decepcionante. Este tipo de retroalimentación directa proporciona a las empresas una visión auténtica de la percepción que tienen los clientes sobre sus ofertas.
+
+Un ejemplo destacado de plataformas que canalizan esta valiosa información son Yelp y Google Maps. En el caso de Yelp, usuarios de todo el mundo comparten sus vivencias en una variedad de negocios, desde restaurantes hasta servicios diversos. Las reseñas, al ser expresiones genuinas de experiencias personales, ofrecen a las empresas una comprensión profunda de cómo sus clientes interactúan con sus productos o servicios.
+
+De manera similar, Google Maps integra una plataforma de reseñas donde los usuarios comparten sus impresiones sobre negocios y lugares. Este fenómeno se convierte en un recurso invaluable para las empresas, ya que los usuarios recurren a estas opiniones al planificar sus actividades, desde compras hasta decisiones sobre lugares donde comer o alojarse.
+
+La relevancia de estas reseñas radica en su capacidad para proporcionar a las empresas una evaluación honesta de su desempeño y la percepción de los clientes. No solo sirven como indicadores clave de la calidad del servicio y la utilidad del local, sino que también señalan áreas específicas que podrían beneficiarse de mejoras. En última instancia, las reseñas de los usuarios se han convertido en una herramienta indispensable para la toma de decisiones estratégicas, permitiendo a las empresas adaptarse y mejorar continuamente para satisfacer las expectativas y necesidades cambiantes de su audiencia.
+
+
 ## Objetivos y Alcance del Proyecto
 
 ### Objetivo: 
