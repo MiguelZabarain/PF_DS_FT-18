@@ -17,7 +17,7 @@ La relevancia de estas reseñas radica en su capacidad para proporcionar a las e
 ## Objetivos y Alcance del Proyecto
 
 ### Objetivo: 
-Proporcionar al cliente -parte de un conglomerado de empresas de restaurantes y afines- un análisis de mercado en EEUU sobre hoteles, restaurantes y otros negocios afines al turismo y ocio, usando para ello las reseñas en Yelp y Google Maps. En resumen, el cliente quiere:
+Proporcionar al cliente -parte de un conglomerado de empresas de restaurantes y afines- un análisis de mercado en EEUU sobre hoteles y restaurantes, usando para ello las reseñas en Yelp y Google Maps. En resumen, el cliente quiere:
 1. Un análisis detallado de la opinión de los usuarios en Yelp y Google Maps en torno a los sitios objeto de estudio.
 2. Utilizando Machine Learning (ML), se requiere un análisis de sentimientos de las reseñas en torno a los sitios objeto de estudio, para predecir cuáles serán los rubros de los negocios que más crecerán (o decaerán).
 3. Con base en 1 y 2, el cliente quiere saber dónde es conveniente emplazar los nuevos locales de restaurantes y afines.
@@ -25,11 +25,11 @@ Proporcionar al cliente -parte de un conglomerado de empresas de restaurantes y 
 
 
 ### Alcance del proyecto: 
-El proyecto gira en torno al estudio de las recomendaciones hechas por los usuarios de hoteles, restaurantes y otros negocios afines al turismo y ocio -en adelante, 'el usuario objetivo'-, y estará limitado por el alcance descrito a continuación:
+El proyecto gira en torno al estudio de las recomendaciones hechas por los usuarios de hoteles y restaurantes -en adelante, 'el usuario objetivo'-, y estará limitado por el alcance descrito a continuación:
 
-1. Se analizarán datos relativos a las reseñas en Yelp y Google Maps hecha por 'el usuario objetivo' en los Estados Unidos, limitando el estudio a los 5 estados con más reseñas, con el fin de garantizar datos suficientes para el entrenamiento de los modelos de ML.
+1. Se analizarán datos relativos a las reseñas en Yelp y Google Maps hechas por el usuario objetivo en los Estados Unidos, limitando el estudio a los 5 Estados más poblados, con el fin de obtener una muestra representativa y significativa que por un lado, garantice datos suficientes para el entrenamiento de los modelos de ML, y por otro lado, refleje de manera precisa las preferencias y opiniones predominantes de la audiencia objetivo a nivel nacional.
 2. Se creará un modelo de Machine Learning (ML1) para predecir cuáles serán los rubros de los negocios que más crecerán (o decaerán), información que será incluida en el informe presentado al cliente.
-3. Se entregará un informe detallado basado en el análisis de los datos y las predicciones del modelo ML1, indicando al cliente, dónde es conveniente emplazar los nuevos locales de restaurantes y afines.
+3. Se entregará un informe detallado basado en el análisis de los datos y las predicciones del modelo ML1, indicando al cliente, dónde es conveniente emplazar los nuevos locales de restaurantes y hoteles.
 4. Se entregará un sistema de recomendación de restaurantes basado en ML(ML2).
 5. Se entregará un dashboard interactivo en Power BI, para que el cliente tenga la posibilidad de explorar los datos a través de visualizaciones claras, que le puedan ayudar a obtener nuevos insights de valor. El Dashboard tendrá 5 KPIs.
 
