@@ -1,0 +1,58 @@
+----------------------
+METODOLOGÍA DE TRABAJO
+----------------------
+Introducción
+------------
+Este documento responde la pregunta relacionada con lo que es tal vez el aspecto más crucial en el éxito de un trabajo colaborativo:
+¿Cómo hacer para que los integrantes del equipo de trabajo puedan colaborar coordinados, repartiendo la carga de trabajo equitativamente, y apoyandose unos a otros?
+
+¿Qué problemas tiene un equipo cuando no trabaja coordinadamente?
+-----------------------------------------------------------------
+Cuando un grupo de personas decide trabajar en grupo para desarrollar una solución software -data solutions incluídas- se enfrenta a los siguientes desafíos:
+1. Desafío #1. Hay problemas de comunicación y dos integrantes terminan repitiendo código.
+2. Desafío #2. Los problemas de comunicación hacen difícil a los integrantes del equipo saber cuales son sus responsabilidades en el día a día.
+3. Desafío #3. Se embarcan en el uso de herramientas tecnológicas que piensan solucionarán todos sus problemas y les permitirá trabajar coordinadamente y con fluidez, cuando en realidad tiende a complicarlo todo.
+4. Desafío #4. Si adicionalmente, los integrantes del equipo carecen de conocimiento y/o experiencia relativos al uso de GitHub y similares para colaboración, ni pensar en la idea de aprender a usar los Branches -ramas- porque por un lado, se perdería mucho tiempo aprendiendo e interiorizando el concepto; y por otro lado, se perdería mucho más tiempo solucionando los problemas y errores que si o si van a presentarse por la falta de experiencia en el uso de la tecnología.
+
+¿Cómo prepararse para enfrentar esos desafíos?
+----------------------------------------------
+Lo mejor que se puede hacer es evitar ponerse en una situación que inexorablemente lleve a enfrentar alguno de ellos.
+La solución no está en las herramientas para la gestión del proyecto, sino en el proceso usado para dicha gestión.
+Existen muchos procesos que se pueden seguir para trabajar en grupo de forma apropiada, pero se propondrá un proceso propietario del grupo, que se cree puede ser más fácil de entender e implementar. Este proceso se apoya en los repositorios para trabajo colaborativo de GitHub.
+
+El problema raiz, fuente de todos los desafíos descritos
+--------------------------------------------------------
+Todos los problemas / desafíos descritos surgen por una razón elemental: la gestión del proyecto no gira en torno a los Activos del proyecto, sino que gira en torno a tareas, roles, y otros rubros no tan concretos.
+
+Imaginemos al integrante del equipo llamado 'Miguel', con Rol Principal/Secundario/Terciario de Data Analyst/Data Scientist/Gestor respectivamente. ¿Qué es más fácil, decirle que está a cargo de los activos 'Dashboard.pbix', 'ModeloDeClasificacionXYZ.py', y 'Readme.md'; o decirle que está a cargo, junto con los integrantes 'Facu' y 'Román', de los aspectos de visualización del proyecto; así como que con 'Román', 'Marcos' y 'Jeison' debe ponerse de acuerdo para encargarse de los asuntos de DataScience relativos a ML?
+
+La solución gira en torno a identificar los documentos que son Activos del proyecto
+-----------------------------------------------------------------------------------
+Un Activo del proyecto es un archivo, de tipo claramente definido -.md, .py, .ipynb, .xlsx, etc.
+
+Lo que diferencia a un Activo del proyecto de otro archivo en el repositorio, es que es explícita o implícitamente exigido por los requerimientos del proyecto. Son ejemplo de Activos, los archivos 'Eda.ipynb', 'Etl.ipynb' y Dashboard.pbix.
+
+Los items de los sprints
+------------------------
+Los items de los sprints no son otra cosa que lo requerido explícita o implicitamente para adelantar exitosamente el sprint.
+El documento 'ItemsSprints' lista para cada sprint los requerimientos en cuestión, y frente a cada uno, el sprint al que pertenece, los Activos involucrados, el encargado -que no es otra cosa que el responsable del Activo para dicho Item de sprint- y sus colaboradores, que no tienen a cargo un Activo asociado al Item del sprint, pero ayudan al Encargado desarrollando parte del documento -texto o código- y colocandolo en la carpeta 'Colaboraciones' del repositorio, desde donde el Encargado los toma para elaborar el Activo.
+
+
+
+Beneficios de incorporar el documento 'ItemsSprints' en la Metodología de Trabajo
+---------------------------------------------------------------------------------
+1. Pone bajo control el 'Desafío #2', porque da claridad a los integrantes del grupo respecto a lo que se debe realizar. En las reuniones diarias con el HM de HENRY cada quien podrá exponer claramente que hizo el día anterior, que hará ese día, y donde ha tenido problemas.
+Por ej., el encargado del Activo 'Etl.ipynb', sabe exactamente que debe contener ese archivo. Si no tiene claro algo, puede mirar los archivos similares de proyectos de otros grupos, o los que anteriormente realizó en los proyectos individuales.
+
+2. Da claridad respecto a que items del Sprint se están atendiendo con la elaboración del Activo. Esto resulta conveniente en la presentación cuando se pregunte como fue atendido un item specífico. En este caso, cada integrante del grupo sabrá cuando debe intervenir, porque tiene claro a que Item de Sprint apunta cada Activo a su cargo.
+
+3. Cada encargado de un Activo tendrá una idea clara de que tiene y que le falta para completar su creación; y podrá pedir ayuda al equipo para su compleción. 
+
+4. Ayuda a identificar los items no atendidos del Sprint.
+
+5. Las responsabilidades del proyecto no se atomizan y evaporan. Por el contrario, están claramente definidas, y los encargados de los Activos sabrán que deben apurar y/o pedir ayuda con tiempo para poder cumplir.
+
+6. Se pone bajo control el 'Desafío #1', porque el encargado del Activo es la única persona autorizada para modificarlo y hacer los respectivos commits que suben al repositorio GitHub los cambios hechos al Activo en su repo local. De esta forma, se minimiza el riesgo de código duplicado; y adicionalmente, se evita conflictos que usualmente surgen en una operación de 'git merge' o 'git rebase'.
+
+7. Posibilita trabajar colaborativamente sin necesidad de agregar ramas al repositorio, trabajando solo con 'main'. Esto es posible porque cada miembro del equipo, tiene en su repositorio local una carpeta 'Colaboraciones' donde pondrá en un archivo de texto, un fragmento de código, o de texto que atiende lo solicitado por el encargado de un Activo. De esta manera colabora con el encargado del Activo sin hacerle modificaciones al mismo, y así en el commmit y push que hace, sube al repositorio GitHub el único cambio que hizo, es decir, el archivo de texto en la carpeta 'Colaboraciones', cuyo contenido luego usará el encargado del Activo para incluirlo al mismo y actualizar el Activo en el repositorio con un commit.
+
