@@ -1,7 +1,7 @@
 # <p align="center">PROYECTO FINAL REQUERIDO POR HENRY EN EL DESARROLLO DEL BOOTCAMP DE DATA SCIENCE</p>
-![Encabezado](Fuentes/18755.jpg)
 ### <p align="center">GRUPO Nº4</p>
 ### <p align="center">DS_FT-18</p>
+![Encabezado](Fuentes/18755.jpg)
 ---
 
 
