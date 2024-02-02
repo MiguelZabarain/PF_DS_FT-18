@@ -148,5 +148,17 @@ La estimación de esfuerzos es una actividad deseable en proyectos que funcionan
 **Por todo lo anterior, decidimos no realizar la estimación de esfuerzos, y el diagrama de Gantt, porque no agrega valor al Sprint, y por el contrario, se vuelve un obstáculo para el desarrollo fluido del mismo.**
 
 
+## Stack Tecnológico
+Esta sección, proporciona una visión detallada de las tecnologías que alimentan la solución tecnológica propuesta. Se dividió en dos partes para ofrecer una visión más detallada y estructurada de las tecnologías que impulsan el proyecto, facilitando la navegación, así como la comprensión clara y detallada de las elecciones tecnológicas.
+
+## Parte 1: Carga Incremental
+Presenta las herramientas y servicios seleccionados para implementar una carga incremental eficiente. Desde el manejo de grandes conjuntos de datos hasta la automatización de procesos de carga. La elección de tecnologías está diseñada para garantizar la eficiencia, la confiabilidad y la escalabilidad en la gestión de datos dinámicos y en constante evolución.
+
+![ColabDataSolution.md_ArqCargaIncremental](Fuentes/ColabDataSolution.md_ArqCargaIncremental.png)
+
+## Parte 2: Data-Solution para el Cliente
+La segunda parte del Stack Tecnológico se centra en la solución de datos que se ofrece al cliente. Aquí, se destaca las tecnologías clave que respaldan la solución, desde la obtención de data del Data Warehouse, hasta la presentación al cliente de las visualizaciones interactiva, informes, y sistema de recomendaciones.
+
+![ColabDataSolution.md_ArqDataSolution](Fuentes/ColabDataSolution.md_ArqDataSolution.png)
 
 
