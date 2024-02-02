@@ -62,17 +62,13 @@ En esta sección se proporciona una perspectiva detallada sobre la calidad y ren
 
 Estos KPIs ofrecen una evaluación detallada de las experiencias de los usuarios, identificando áreas de oportunidad para mejorar la calidad en el sector de hoteles y restaurantes. El dashboard interactivo que se desarrollará con Power BI proporciona una herramienta visual poderosa para analizar estos indicadores y tomar decisiones informadas que puedan impulsar la entrada al mercado con productos y servicios de alta calidad.
 
-## Planificación
-En esta sección se ....
+## Planificación y Organización
+En esta sección, abordaremos la metodología de trabajo que guía nuestro enfoque colaborativo. La coordinación efectiva, la asignación equitativa de tareas y el apoyo mutuo son pilares fundamentales para el éxito de nuestro equipo. La metodología propuesta, alineada con los principios ágiles de Scrum, simplifica las herramientas convencionales para una comunicación y planificación más efectivas en nuestros sprints.
 
+### Metodología de trabajo
+Esta sección responde la pregunta relacionada con lo que es tal vez el aspecto más crucial en el éxito de un trabajo colaborativo: ¿Cómo hacer para que los integrantes del equipo de trabajo puedan colaborar coordinados, repartiendo la carga de trabajo equitativamente, y apoyándose unos a otros?
 
-
-
-### METODOLOGÍA DE TRABAJO
-
-#### Introducción
-
-Este documento responde la pregunta relacionada con lo que es tal vez el aspecto más crucial en el éxito de un trabajo colaborativo: ¿Cómo hacer para que los integrantes del equipo de trabajo puedan colaborar coordinados, repartiendo la carga de trabajo equitativamente, y apoyándose unos a otros?
+Esta metodología se alinea con la filosofía Ágil de Scrum, pero simplifica las herramientas convencionalmente usadas para apoyar la comunicación y planeación del trabajo iterativo por Sprints.
 
 #### ¿Qué problemas tiene un equipo cuando no trabaja coordinadamente?
 
@@ -100,6 +96,7 @@ Un Activo del proyecto es un archivo, de tipo claramente definido (.md, .py, .ip
 Lo que diferencia a un Activo del proyecto de otro archivo en el repositorio, es que es explícita o implícitamente exigido por los requerimientos del proyecto. Son ejemplo de Activos, los archivos 'Eda.ipynb', 'Etl.ipynb' y Dashboard.pbix.
 
 #### Los items de los sprints
+![ItemsSprints](Fuentes/ItemsSprints.png)
 
 Los items de los sprints no son otra cosa que lo requerido explícita o implícitamente para adelantar exitosamente el sprint. El documento 'ItemsSprints' lista para cada sprint los requerimientos en cuestión, y frente a cada uno, el sprint al que pertenece, los Activos involucrados, el encargado (que no es otra cosa que el responsable del Activo para dicho Item de sprint) y sus colaboradores, que no tienen a cargo un Activo asociado al Item del sprint, pero ayudan al Encargado desarrollando parte del documento (texto o código) y colocándolo en la carpeta 'Colaboraciones' del repositorio, desde donde el Encargado los toma para elaborar el Activo.
 
@@ -119,6 +116,36 @@ Los items de los sprints no son otra cosa que lo requerido explícita o implíci
 
 7. Posibilita trabajar colaborativamente sin necesidad de agregar ramas al repositorio, trabajando solo con 'main'. Esto es posible porque cada miembro del equipo tiene en su repositorio local una carpeta 'Colaboraciones' donde pondrá en un archivo de texto, un fragmento de código o de texto que atiende lo solicitado por el encargado de un Activo. De esta manera, colabora con el encargado del Activo sin hacerle modificaciones al mismo, y así, en el commit y push que hace, sube al repositorio GitHub el único cambio que hizo, es decir, el archivo de texto en la carpeta 'Colaboraciones', cuyo contenido luego usará el encargado del Activo para incluirlo al mismo y actualizar el Activo en el repositorio con un commit.
 
+8. La simpleza de esta metodología resuelve el 'Desafio #3' e indirectamente, el 'Desafío #4', porque con algo tan simple como la tabla de 'ItemsSprint', cada integrante del grupo sabe lo que debe hacer, de que documento(s) o Activos es responsable, y a que Item del Sprint está impactando al desarrollar dicho(s) Activo(s). 
+
+### Integrantes del equipo, sus roles y responsabilidades
+Esta tabla resume los roles principales, secundarios y terciarios de cada integrante del equipo, así como los activos por los cuales son responsables -ver Metodología de trabajo.
+
+![IntegrantesRolesResponsabilidades](Fuentes/IntegrantesRolesResponsabilidades.png)
+
+### Inconveniencia de la estimación de esfuerzos y diagrama de Gantt para este proyecto
+
+La estimación de esfuerzos es una actividad deseable en proyectos que funcionan bien con metodologías tipo Cascada; sin embargo, en entornos altamente iterativos, como los proyectos que adoptan la metodología Scrum, y en equipos reducidos con miembros desempeñando múltiples roles, la estimación de esfuerzos puede presentar inconvenientes significativos. Aquí se detallan algunas razones para la que resulta nocivo para el proyecto la estimación detallada de esfuerzos:
+
+1. **Naturaleza Evolutiva del Proyecto:**
+   - En proyectos Scrum, la naturaleza iterativa y adaptativa implica cambios frecuentes en los requisitos y en la dirección del proyecto. Establecer estimaciones detalladas para tareas específicas puede requerir un uso excesivo de tiempo para ajustar la estimación de esfuerzos a medida que evoluciona el proyecto.
+
+2. **Roles Flexibles y Colaboración Intensa:**
+   - En equipos pequeños con miembros que desempeñan múltiples roles, la colaboración intensa y la flexibilidad son esenciales. Las tareas pueden asignarse dinámicamente según las necesidades del proyecto, y los miembros pueden asumir responsabilidades más allá de sus roles designados. Esto hace que las estimaciones detalladas basadas en roles fijos sean menos aplicables.
+
+3. **Enfoque en la Entrega de Valor:**
+   - Scrum se centra en la entrega de valor de manera continua. Las estimaciones detalladas pueden desviar la atención de la entrega efectiva de funcionalidades y resultados tangibles. La prioridad está en la adaptación rápida a los cambios y la entrega de incrementos de valor en cada sprint.
+
+4. **Complejidad y Variedad de las Tareas:**
+   - En equipos multifuncionales, la complejidad y la variedad de las tareas pueden variar significativamente. Algunos elementos pueden ser predecibles pero otros no, y asignar esfuerzos detallados a todas las tareas puede resultar en una inversión de tiempo desproporcionada.
+
+5. **Sprint Planning Dinámico:**
+   - En Scrum, la planificación se realiza en sprints cortos y dinámicos. Las estimaciones detalladas pueden ser menos efectivas cuando se planifica solo para el próximo sprint, ya que la priorización y la naturaleza iterativa permiten ajustes continuos en la planificación del equipo.
+
+6. **Adaptación a Cambios:**
+   - La capacidad de adaptación a cambios rápidos es uno de los principios fundamentales de Scrum. En este contexto, las estimaciones detalladas pueden limitar la capacidad del equipo para abrazar la cambiante realidad del proyecto y ajustar la dirección según sea necesario.
+
+**Por todo lo anterior, decidimos no realizar la estimación de esfuerzos, y el diagrama de Gantt, porque no agrega valor al Sprint, y por el contrario, se vuelve un obstáculo para el desarrollo fluido del mismo.**
 
 
 
