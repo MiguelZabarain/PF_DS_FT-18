@@ -196,6 +196,23 @@ Será usado para desarrollar, entrenar y desplegar el modelo de machine learning
 Será usado para exponer una API simple que acepta solicitudes de recomendación. Consulta el modelo desplegado en Cloud AI Platform para generar recomendaciones basadas en las entradas proporcionadas por los usuarios.
 
 
+## Análisis Exploratorio de Datos - EDA
+Por ser un tema tan extenso e importante, que requiere la utilización de código para realizarlo, el EDA se pone a disposición del lector a través del siguiente [enlace](https://github.com/MiguelZabarain/PF_DS_FT-18/blob/main/Codigo/EDA.ipynb)
+
+
+## Extracción, Transformación y Carga de Datos - ETL
+Este trabajo de Data Engineering realizado con una muestra representativa de datos se pone a disposición del lector a través de los siguientes enlaces:
+
+[busisness.ipynb](https://github.com/MiguelZabarain/PF_DS_FT-18/blob/main/Codigo/ETL/Yelp/Notebooks/busisness.ipynb)
+
+[reviews.ipynb](https://github.com/MiguelZabarain/PF_DS_FT-18/blob/main/Codigo/ETL/Yelp/Notebooks/reviews.ipynb)
+
+[tips.ipynb](https://github.com/MiguelZabarain/PF_DS_FT-18/blob/main/Codigo/ETL/Yelp/Notebooks/tips.ipynb)
+
+[users.ipynb](https://github.com/MiguelZabarain/PF_DS_FT-18/blob/main/Codigo/ETL/Yelp/Notebooks/users.ipynb)
+
+
+
 
 
 
