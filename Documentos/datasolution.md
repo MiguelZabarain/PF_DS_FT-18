@@ -34,5 +34,5 @@ Power BI se utilizará para crear visualizaciones interactivas y paneles de cont
 
 El proyecto DataSolution aprovecha los recursos de Google Cloud Platform para implementar una solución completa de análisis de datos. Desde la ingesta de datos desde Google Drive hasta su almacenamiento, procesamiento y visualización en Power BI, utilizaremos una combinación de servicios en la nube para ofrecer una solución robusta y escalable.
 
- ![Texto alternativo](Imagenes\solution01.jpg)
+ ![primerDiapositiva](Imagenes/solution01.jpg)
  ![Texto alternativo](Imagenes\solution02.jpg)
