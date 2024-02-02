@@ -151,14 +151,51 @@ La estimación de esfuerzos es una actividad deseable en proyectos que funcionan
 ## Stack Tecnológico
 Esta sección, proporciona una visión detallada de las tecnologías que alimentan la solución tecnológica propuesta. Se dividió en dos partes para ofrecer una visión más detallada y estructurada de las tecnologías que impulsan el proyecto, facilitando la navegación, así como la comprensión clara y detallada de las elecciones tecnológicas.
 
-## Parte 1: Carga Incremental
+### Parte 1: Carga Incremental | Recursos Utilizados
 Presenta las herramientas y servicios seleccionados para implementar una carga incremental eficiente. Desde el manejo de grandes conjuntos de datos hasta la automatización de procesos de carga. La elección de tecnologías está diseñada para garantizar la eficiencia, la confiabilidad y la escalabilidad en la gestión de datos dinámicos y en constante evolución.
 
 ![ColabDataSolution.md_ArqCargaIncremental](Fuentes/ColabDataSolution.md_ArqCargaIncremental.png)
 
-## Parte 2: Data-Solution para el Cliente
-La segunda parte del Stack Tecnológico se centra en la solución de datos que se ofrece al cliente. Aquí, se destaca las tecnologías clave que respaldan la solución, desde la obtención de data del Data Warehouse, hasta la presentación al cliente de las visualizaciones interactiva, informes, y sistema de recomendaciones.
+#### Google Drive
+Se utilizará Google Drive como fuente inicial de los conjuntos de datos. Para probar el proceso de carga incremental, se pondrá en Drive el 70% de los datos suministrados; luego se borrarán y se colocará el 30% restante. Sabremos que el proceso de carga incremental funciona si en Google Cloud Storage tenemos el 100% de los datos suministrados de Yelp y Google Maps.
+
+#### Google Cloud Storage
+Se usará Google Cloud Storage (GCS) para almacenar los conjuntos de datos de forma escalable y duradera. Los datos se cargarán en GCS de forma incremental a medida que se reciban nuevos conjuntos de datos.
+
+#### Google Cloud Composer
+Google Cloud Composer se utilizará para orquestar y programar los flujos de trabajo de carga incremental. 
+
+#### Google Cloud Functions
+Google Cloud Functions se utilizará para implementar las transformaciones requeridas a los datos antes de cargarlos en el Data WareHouse.
+
+#### Google BigQuery
+Google BigQuery se utilizará como almacén de datos para almacenar los conjuntos de datos procesados y transformados. Con BigQuery se disponibilizan los datos a Power BI y los modelos de Machine Learning.
+
+
+### Parte 2: Data-Solution para el Cliente | Recursos Utilizados
+La segunda parte del Stack Tecnológico se centra en la parte de la solución de datos que se encarga de disponibilizar los entregables ofrecidos al cliente. Aquí, se destaca las tecnologías clave que respaldan la solución, desde la obtención de data del Data Warehouse, hasta la presentación al cliente de las visualizaciones interactivas, informes, y sistema de recomendaciones.
 
 ![ColabDataSolution.md_ArqDataSolution](Fuentes/ColabDataSolution.md_ArqDataSolution.png)
+
+#### Google BigQuery
+Google BigQuery se utilizará como fuente de datos disponibles para Power BI Desktop y los modelos de Machine Learning.
+
+#### Power BI Desktop
+Será usado para realizar localmente, en las premisas del DataAnalyst, el Dashboard que será entregado al cliente a través de Power BI Cloud Service.
+
+#### Power BI Cloud Service
+Es el servicio que permite al cliente acceder al Dashboard interactivo a través de una url en un navegador web.
+
+#### Python
+Python será usado como lenguaje de programación para el proyecto. Entre otras cosas, será usado para desarrollar localmente, en las instancias del ML Engineer, los modelos ML1 (modelo predictivo) y ML2 (sistema de recomendación). También se usa para la realización del EDA, que junto con las predicciones del modelo ML1 son usados para la creación del informe requerido por el cliente.
+
+#### Google AI Platform
+Será usado para desarrollar, entrenar y desplegar el modelo de machine learning ML2 en la nube de Google. Cabe recordar que ML2 es la base del sistema de recomendación.
+
+#### Google Cloud functions
+Será usado para exponer una API simple que acepta solicitudes de recomendación. Consulta el modelo desplegado en Cloud AI Platform para generar recomendaciones basadas en las entradas proporcionadas por los usuarios.
+
+
+
 
 
