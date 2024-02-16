@@ -207,7 +207,26 @@ Este trabajo de Data Engineering realizado con una muestra representativa de dat
 [users.ipynb](https://github.com/MiguelZabarain/PF_DS_FT-18/blob/main/Codigo/ETL/Yelp/Notebooks/users.ipynb)
 
 
+## Datasets y fuentes complementarias
+"Los datos son extraídos de la plataforma de reseñas Yelp y de Google Maps, para Estados Unidos. Tiene información sobre la ubicación de los comercios, su categoría, puntajes promedios, si están abiertos o no, sobre los usuarios, las reseñas que hicieron, cuántas reseñas hicieron, cuántos votos han recibido esas reseñas entre otros. 
+
+### Fuentes de datos
+Fuentes de datos iniciales:
++   [Dataset de Google Maps](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA?usp=share_link)
++   [Dataset de Yelp!](https://drive.google.com/drive/folders/1TI-SsMnZsNP6t930olEEWbBQdo_yuIZF?usp=sharing)
+
+Fuente de datos de la cotización del índice $GSPHRL, que sigue la Industria de Hoteles-Restaurantes-Esparcimiento:
++   [Stockcharts.com](https://stockcharts.com/h-hd/?%24GSPHRL)
+
+NOTA: Es necesario aplicar a la suscripción de prueba por 30 días para tener acceso a los datos.
 
 
+## Entregables
+A continuación se da acceso desde la nube, a cada uno de los tres entregables descritos en el alcance del proyecto.
 
++   [DashBoard](https://app.powerbi.com/view?r=eyJrIjoiOTliNjU1YWYtMDU2MS00Nzg2LWE4YmYtOGI2MjU5MzNlODMxIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
++   [Sistema De recomendación](https://recomendacion.streamlit.app/)
++   [Informe Con Análisis & Recomendaciones](https://docs.google.com/document/d/1wttyXdvaUHCxL9WvJ0yKiAZ05Z7psqvF9SFn2tJ_1IQ/edit?pli=1)
+
+Adicionalmente, en las carpetas '/Codigo/' y '/Documentos/' del repositorio, se encuentra el código del Sistema de Recomendación (ML2) realizado con Streamlit; y el informe con análisis y recomendaciones entregado al cliente. Este último se realizó con base en los hallazgos del EDA y del Sistema de Predicción (ML1).
 
