@@ -1,0 +1,50 @@
+Página 1: Introducción y Cálculo del Puntaje
+El objetivo de este informe es presentar el proceso utilizado para predecir las ubicaciones de nuevos restaurantes, basándose en un conjunto de factores relevantes. Para lograr esto, se diseñó un algoritmo que calcula un puntaje para cada ubicación y luego se utilizó un algoritmo de aprendizaje automático para predecir la latitud y longitud de las nuevas ubicaciones.
+Cálculo del Puntaje o Algoritmo de Manipulación de Datos
+El primer paso en nuestro proceso fue desarrollar una función llamada calcular_puntaje que tiene en cuenta varios factores importantes:
+    • total_sentimientos: Se asignó un peso de -2 a esta variable. Las ubicaciones con un bajo número de "sentimientos totales" tienen un puntaje más alto, ya que se considera que esto refleja una mayor satisfacción del cliente.
+    • PIB per cápita ($): Se asignó un peso de 1 a esta variable. Las ubicaciones con un alto PIB per cápita tendrán un puntaje más alto, ya que indican áreas con mayor capacidad adquisitiva.
+    • Población (Millones): Se asignó un peso de 1 a esta variable. Las ubicaciones con una alta densidad de población tendrán un puntaje más alto, lo que sugiere una mayor cantidad de potenciales clientes.
+    • review_count: Se asignó un peso de 1 a esta variable. Las ubicaciones con un alto número de revisiones tendrán un puntaje más alto, lo que podría indicar una mayor popularidad del área entre los clientes.
+Estos pesos fueron seleccionados considerando la importancia relativa de cada factor para el éxito de un nuevo restaurante.
+Página 2: Proceso de Machine Learning
+Proceso de Machine Learning
+El siguiente paso fue implementar un algoritmo de aprendizaje automático para predecir las latitudes y longitudes de las nuevas ubicaciones de restaurantes. Se eligió el algoritmo K-Nearest Neighbors (KNN) debido a su simplicidad y capacidad para manejar relaciones no lineales entre las variables.
+Los pasos seguidos fueron los siguientes:
+    • División de los datos: El dataset se dividió en un conjunto de entrenamiento (80% de los datos) y un conjunto de prueba (20% de los datos).
+    • Entrenamiento del modelo: Se creó un modelo KNN con 3 vecinos más cercanos y se entrenó con los datos de entrenamiento.
+    • Predicción: Utilizando el modelo entrenado, se hicieron predicciones sobre el conjunto de prueba.
+    • Evaluación del modelo: Se calculó el error cuadrático medio para evaluar el rendimiento del modelo.
+Decisión de utilizar K-Nearest Neighbors (KNN) en lugar de Regresión Lineal Múltiple
+La elección de utilizar el algoritmo KNN en lugar de la regresión lineal múltiple se basó en varias consideraciones fundamentales:
+    1. No linealidad de los datos: Durante el análisis exploratorio de los datos, se observó que la relación entre las variables predictoras (como el PIB per cápita, la densidad poblacional, etc.) y la variable de respuesta (latitud y longitud de las ubicaciones de los comercios) no era lineal. La regresión lineal múltiple asume una relación lineal entre las variables, lo que puede no ser adecuado para datos que muestran patrones no lineales.
+    2. Flexibilidad del modelo: A diferencia de la regresión lineal múltiple, que asume una forma específica para la relación entre las variables, KNN es un algoritmo no paramétrico que no hace suposiciones sobre la forma de la relación entre las variables. Esto proporciona una mayor flexibilidad para capturar relaciones complejas y no lineales entre los datos.
+    3. Robustez ante datos ruidosos o atípicos: KNN es robusto ante la presencia de datos ruidosos o atípicos, ya que no se basa en una función de distribución específica. Por lo tanto, es menos sensible a valores extremos que podrían distorsionar los resultados en la regresión lineal múltiple.
+    4. Facilidad de implementación y comprensión: KNN es un algoritmo relativamente simple de entender e implementar. No requiere supuestos complicados sobre la distribución de los datos y es intuitivo en su naturaleza, lo que facilita su interpretación y comunicación de los resultados a los interesados.
+En resumen, la elección de KNN sobre la regresión lineal múltiple se basó en su capacidad para manejar relaciones no lineales, su robustez ante datos ruidosos y su facilidad de implementación y comprensión. Estas ventajas hicieron que KNN fuera el algoritmo más adecuado para el análisis de predicción de ubicaciones de comercios en este contexto específico.
+
+
+Informe de Predicción de Ubicaciones de Comercios - Análisis de Google
+Página 1: Introducción y Proceso de Preprocesamiento
+El objetivo de este informe es presentar el proceso utilizado para predecir las ubicaciones de nuevos comercios basándose en un conjunto de factores relevantes utilizando datos de Google. Al igual que en el análisis de Yelp, se empleó un enfoque metodológico riguroso para garantizar la precisión de las predicciones.
+Proceso de Preprocesamiento
+Para manejar el gran volumen de datos de Google, se utilizó un enfoque de procesamiento por lotes. Este método permitió gestionar eficientemente más de un millón de filas de datos. Además, en lugar de analizar el sentimiento en detalle, se clasificaron los comentarios como positivos (1) o negativos (0), otorgando un peso mayor a esta variable en el algoritmo.
+Página 2: Cálculo del Puntaje y Algoritmo de Machine Learning
+Cálculo del Puntaje
+Al igual que en el análisis de Yelp, se calculó un puntaje para cada ubicación utilizando variables como PBI per cápita y densidad poblacional. Sin embargo, en este caso, el análisis de sentimiento orientado a una clasificación binaria (positivo/negativo) se consideró de mayor relevancia, recibiendo un peso significativo en el cálculo del puntaje.
+Algoritmo de Machine Learning
+Posteriormente, se utilizó el algoritmo KNN para predecir la latitud y longitud de las posibles ubicaciones de los comercios. KNN se aplicó después de calcular el puntaje para cada ubicación, lo que permitió una predicción más precisa basada en múltiples factores.
+Página 3: Evaluación del Modelo y Resultados
+Evaluación del Modelo
+El modelo KNN entrenado fue evaluado utilizando técnicas estándar de evaluación de modelos, como la validación cruzada y el cálculo de métricas de rendimiento.
+Resultados
+Los resultados obtenidos demostraron la eficacia del enfoque utilizado. Las predicciones de ubicaciones de comercios basadas en el modelo KNN fueron consistentes y precisas, lo que sugiere que el algoritmo desarrollado es una herramienta útil para la toma de decisiones en la ubicación de nuevos comercios.
+Página 4: Comparación con el Análisis de Yelp
+En esta página, se realizará una comparación entre el análisis realizado con datos de Google y el análisis previo realizado con datos de Yelp. Se destacarán las similitudes y diferencias en los enfoques metodológicos, así como en los resultados obtenidos.
+Página 5: Conclusiones y Recomendaciones
+Conclusiones
+El análisis de ubicaciones de comercios basado en datos de Google ha demostrado ser efectivo, permitiendo predecir con precisión la latitud y longitud de nuevas ubicaciones. El enfoque de procesamiento por lotes y el énfasis en el análisis de sentimiento binario han contribuido a la mejora de la precisión del modelo.
+Recomendaciones
+Se recomienda seguir utilizando este enfoque metodológico para futuros análisis de ubicaciones de comercios. Además, se sugiere explorar la posibilidad de integrar otros factores relevantes, como la demografía del área y la competencia local, para mejorar aún más la precisión de las predicciones.
+
+
