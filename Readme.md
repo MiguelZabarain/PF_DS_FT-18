@@ -5,6 +5,8 @@
 ---
 
 
+
+
 ## Contexto
 Uno de los datos más valiosos con que cuentan las empresas de hoy en día son las reseñas de usuarios de sus productos o servicios, y esto se debe a diversas razones fundamentales. En primer lugar, estas opiniones espontáneas y sinceras surgen naturalmente cuando la experiencia con el bien o servicio fue excepcionalmente positiva o, por el contrario, decepcionante. Este tipo de retroalimentación directa proporciona a las empresas una visión auténtica de la percepción que tienen los clientes sobre sus ofertas.
 
